@@ -1,7 +1,6 @@
-package net.buscacio.paula.citiesAPI.states;
+package net.buscacio.paula.citiesAPI.entity;
 
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
-import net.buscacio.paula.citiesAPI.countries.Country;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
@@ -38,6 +37,19 @@ public class State {
     private List<Integer> ddd;
 
     public State() {}
+
+
+    public State(Long id, String name, String uf, Integer ibgeCode) {
+        this.id = id;
+        this.name = name;
+        this.uf = uf;
+        this.ibgeCode = ibgeCode;
+    }
+
+    public void setDdd(List<Integer> ddd) {
+        this.ddd = ddd;
+    }
+
 
     public Long getId() {
         return id;

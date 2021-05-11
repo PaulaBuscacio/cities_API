@@ -1,4 +1,4 @@
-package net.buscacio.paula.citiesAPI.countries;
+package net.buscacio.paula.citiesAPI.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -25,6 +25,14 @@ public class Country {
 
 
     public Country() {}
+
+    public Country(Long id, String name, String portugueseName, String code, Integer bacen) {
+        this.id = id;
+        this.name = name;
+        this.portugueseName = portugueseName;
+        this.code = code;
+        this.bacen = bacen;
+    }
 
     public Long getId() {
         return id;

@@ -1,14 +1,14 @@
-package net.buscacio.paula.citiesAPI.distances;
+package net.buscacio.paula.citiesAPI.service;
 
-import java.util.Arrays;
-import java.util.List;
-
-import net.buscacio.paula.citiesAPI.cities.City;
-import net.buscacio.paula.citiesAPI.cities.CityRepository;
+import net.buscacio.paula.citiesAPI.entity.City;
+import net.buscacio.paula.citiesAPI.repository.CityRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.geo.Point;
 import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
+import java.util.List;
 
 @Service
 public class DistanceService {

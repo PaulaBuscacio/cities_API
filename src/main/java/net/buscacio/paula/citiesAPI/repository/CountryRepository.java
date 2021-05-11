@@ -1,6 +1,6 @@
-package net.buscacio.paula.citiesAPI.countries.repository;
+package net.buscacio.paula.citiesAPI.repository;
 
-import net.buscacio.paula.citiesAPI.countries.Country;
+import net.buscacio.paula.citiesAPI.entity.Country;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CountryRepository extends JpaRepository<Country, Long> {

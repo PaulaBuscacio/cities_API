@@ -1,16 +1,16 @@
-package net.buscacio.paula.citiesAPI.cities;
-
-import java.io.Serializable;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Types;
+package net.buscacio.paula.citiesAPI.utils;
 
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.usertype.UserType;
 import org.postgresql.geometric.PGpoint;
 import org.springframework.data.geo.Point;
+
+import java.io.Serializable;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Types;
 
 public class PointType implements UserType {
     @Override

@@ -1,9 +1,11 @@
-package net.buscacio.paula.citiesAPI.cities;
+package net.buscacio.paula.citiesAPI.entity;
 
+import net.buscacio.paula.citiesAPI.utils.PointType;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
 import org.springframework.data.geo.Point;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -39,6 +41,13 @@ public class City {
         this.uf = uf;
         this.ibgeCode = ibgeCode;
         this.location = location;
+    }
+
+    public City(Long id, String nome, Integer uf, Integer ibgeCode) {
+        this.id = id;
+        this.nome = nome;
+        this.uf = uf;
+        this.ibgeCode = ibgeCode;
     }
 
     public Long getId() {

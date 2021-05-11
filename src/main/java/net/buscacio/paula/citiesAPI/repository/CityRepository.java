@@ -1,5 +1,6 @@
-package net.buscacio.paula.citiesAPI.cities;
+package net.buscacio.paula.citiesAPI.repository;
 
+import net.buscacio.paula.citiesAPI.entity.City;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

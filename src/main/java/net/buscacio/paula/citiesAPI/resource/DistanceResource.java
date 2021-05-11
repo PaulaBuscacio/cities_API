@@ -1,5 +1,6 @@
-package net.buscacio.paula.citiesAPI.distances;
+package net.buscacio.paula.citiesAPI.resource;
 
+import net.buscacio.paula.citiesAPI.service.DistanceService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
