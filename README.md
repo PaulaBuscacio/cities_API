@@ -1,7 +1,7 @@
 # Projeto desenvolvido durante bootcamp da Digital Innovation One
 Desenvolvendo um sistema de busca por cidades e estados do Brasil e países em uma API REST com Spring Boot
 
-###Principais Tecnologias
+### Principais Tecnologias
 * Java
 * Spring Framework
 * Postgres
